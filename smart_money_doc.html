@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Money Concept - Documentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1a73e8;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav {
+            width: 20%;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            padding: 1rem;
+            height: 100vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            font-size: 1.2rem;
+            color: #1a73e8;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #1a73e8;
+        }
+
+        article {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #1a73e8;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .note {
+            background: #e3f2fd;
+            border-left: 4px solid #1a73e8;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+        }
+
+        .steps {
+            background: #fefefe;
+            border-left: 4px solid #ffb300;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            background: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Dropdown styling for sidebar */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            color: #333;
+            cursor: pointer;
+            padding: 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: relative;
+            list-style: none;
+            padding-left: 1rem;
+            margin: 0.25rem 0 0 0;
+        }
+
+        .dropdown-content li {
+            margin: 0.25rem 0;
+        }
+
+        .dropdown:hover .dropdown-content,
+        .dropdown:focus-within .dropdown-content {
+            display: block;
+        }
+
+        .dropbtn:after {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #ffffff;">Smart Money Concept - Documentation</h1>
+        <p>Comprehensive Guide based on Wyckoff Theory, Supply & Demand, and Institutional Trading</p>
+    </header>
+    <main>
+        <nav>
+            <h2>Modules</h2>
+            <ul>
+                <li><a href="#module1">1. Law of Supply and Demand</a></li>
+                <li><a href="#module2">2. Supply & Demand Trading</a></li>
+                <li><a href="#module3">3. Law of Effort and Result</a></li>
+                <li><a href="#module4">4. Volume Spread Analysis (VSA)</a></li>
+                <li><a href="#module5">5. Law of Cause and Effect</a></li>
+                <li><a href="#module6">6. The Composite Man</a></li>
+                <li><a href="#module7">7. Liquidity Clear-Outs</a></li>
+                <li><a href="#module8">8. Think Like a Smart Money Trader</a></li>
+                <li><a href="#module9">9. Tactics Used by Smart Money</a></li>
+
+                <li class="dropdown">
+                    <button class="dropbtn" aria-expanded="false">10. Smart Money Traps ▾</button>
+                    <ul class="dropdown-content">
+                        <li><a href="#module10-part1">Fake Breakout at the High/Low of the Day</a></li>
+                        <li><a href="#module10-part2">Asian Session Trap</a></li>
+                        <li><a href="#module10-part3">Wedges/Triangles Trap</a></li>
+                        <li><a href="#module10-part4">Market Open Manipulation</a></li>
+                        <li><a href="#module10-part5">Accumulation / Distribution Trap</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#module11">11. How to Align with Smart Money</a></li>
+
+                <li class="dropdown">
+                    <button class="dropbtn" aria-expanded="false">12. Six Trading Strategies ▾</button>
+                    <ul class="dropdown-content">
+                        <li><a href="#module12-part1">Demand Zone Entry After Liquidity Clear-Out</a></li>
+                        <li><a href="#module12-part2">Supply Zone Entry After Liquidity Clear-Out</a></li>
+                        <li><a href="#module12-part3">Demand Zone Entry After Down Thrust VSA Pattern</a></li>
+                        <li><a href="#module12-part4">Supply Zone Entry After Up Thrust VSA Pattern</a></li>
+                        <li><a href="#module12-part5">Over and Under Break of Structure</a></li>
+                        <li><a href="#module12-part6">Psychological Numbers and VSA Clear-Out</a></li>
+                    </ul>
+
+                <li>
+            </ul>
+        </nav>
+
+        <article>
+            <section id="module1">
+                <h2>Module 1: The Law of Supply and Demand</h2>
+                <ul>
+                    <li>Any chart is a sequence of supply and demand zones.</li>
+                    <li>If you want to become a smart money trader, you first need to learn the law of Supply and
+                        Demand.</li>
+                    <li>According to Wyckoff Theory, supply and demand determines the price direction:</li>
+                    <ol>
+                        <li>If demand is greater than supply, the price will rise.</li>
+                        <li>If supply is greater than demand, the price will go down.</li>
+                        <li>If supply and demand are in balance, there’s no significant price change.</li>
+                    </ol>
+                    <li>This is one of the most basic principles of all financial markets.</li>
+                    <li>There are 2 types of market participants: Aggressive and Passive.</li>
+                    <ol>
+                        <li><strong>Aggressive Participants:</strong> They use “at market” orders. They have urgency to
+                            enter
+                            and attack the best
+                            price possible. The real engine of the market since they are the ones that initiate the
+                            transactions.
+                            i.e., An aggressive participation of traders will produce a change in price.
+                        </li>
+                        <li><strong>Passive Participants:</strong> They use limit orders. The interaction between
+                            aggressive buyers, aggressive
+                            sellers, passive buyers and passive sellers is what moves the price. i.e., Passive orders
+                            have the ability
+                            to stop a move, but not the ability to make the price move. .</li>
+                    </ol>
+                </ul>
+                <h3>Upward Price Movement</h3>
+                <ul>
+                    <li>For the price to move upwards, buyers must buy all supply orders available at that level and
+                        continue buying aggressively to force the price up, to find new sellers to trade with.</li>
+                    <li>Passive buy orders can slow downward movement but cannot push prices up on their own.</li>
+                </ul>
+                <h3>Downward Price Movement</h3>
+                <ul>
+                    <li>For the price to move downward, sellers must consume all demand orders at that level and
+                        continue pushing down, forcing the price to go in search of buyers at lower levels.</li>
+                    <li>Passive sell orders can slow upward movement but cannot drive prices down alone.</li>
+                </ul>
+                <div class="note">
+                    <strong>Very Important:</strong> Price movement requires aggressiveness. Lack of supply helps prices
+                    rise; lack of demand causes them to fall.
+                </div>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>In a rising market, as long as buying consumes liquidity (supply) at higher levels, price
+                            will rise.
+                        </li>
+                        <li>In a declining market, as long as selling consumes liquidity (demand) at lower levels, price
+                            will fall.
+                        </li>
+                    </ul>
+                </div>
+                <div class="steps">
+                    <h3>Three-Step Process (Market Turn):</h3>
+                    <ol>
+                        <li><strong>Exhaustion:</strong> Buyers lose interest in continuing to buy.</li>
+                        <li><strong>Absorption:</strong> Smart money places more sell orders; many Passive sellers
+                            appear.</li>
+                        <li><strong>Initiative:</strong> More and more Aggressive sellers are entering the market.</li>
+                    </ol>
+                </div>
+
+                <img src="img/m_1_1.png" alt="Supply and Demand Zones Chart"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+            </section>
+
+            <section id="module2">
+                <h2>Module 2: Supply & Demand Trading</h2>
+                <ul>
+                    <li>If you want to improve your trading performance and trade along with the big players, implement
+                        supply and demand concepts in your strategy.</li>
+                    <li>Identify areas where smart money has placed their orders to benefit from their influence.</li>
+                    <li>A supply zone is where smart money has sold at high prices, creating bearish pressure that
+                        pushes the price down.</li>
+                    <li>A demand zone is where smart money has bought at low prices, creating bullish pressure that
+                        pushes the price up.</li>
+
+                    <img src="img/m_2_1.png" alt="Supply & Demand Zones Trading"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+                    <li>If prices revisit these supply and demand zones, they are likely to be rejected.</li>
+                    <li>To determine optimal zones, look for sharp price increases or decreases, known as market
+                        imbalances, significant price shifts in one direction, indicating smart money involvement.</li>
+                </ul>
+                <h3>To Identify Demand Zones</h3>
+                <ol>
+                    <li>Look for fast impulse moves, focusing on big green candles.</li>
+                    <li>Locate the base of the zone: place a line at the high of the most recent red candle before the
+                        impulse move, and another at the most recent swing low.</li>
+                </ol>
+                <h3>To Identify Supply Zones</h3>
+                <ol>
+                    <li>Look for fast impulse moves with big red candles.</li>
+                    <li>Locate the base: find the most recent up candle before the drop, place a line at its low, and
+                        another at the most recent swing high.</li>
+                </ol>
+                <img src="img/m_2_2.png" alt="Supply and Demand Zones Chart"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+                <div class="steps">
+                    <h3>Follow 2 Rules to Identify Right Zones</h3>
+                    <ol>
+                        <li>Trade only fresh and untouched zones because supply and demand zones are one-time use. Once
+                            price hits and reverses, the zone loses its
+                            power and the probability of causing another reversal in the
+                            future is over.</li>
+                        <li>Recent zones are more important than older ones; newly created areas are more effective.
+                        </li>
+                    </ol>
+                </div>
+                <h3>Types of Supply and Demand Zones</h3>
+                <ol>
+                    <li><strong>Continuation: Rally-Base-Rally</strong>
+                        <ul>
+                            <li>Forms a demand zone during an uptrend.</li>
+                            <li>The market structure begins with a rally followed by consolidation and ends with another
+                                rally which creates the demand zone.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Continuation: Drop-Base-Drop</strong>
+                        <ul>
+                            <li>Forms a supply zone during a downtrend.</li>
+                            <li>The market structure begins with a price decrease followed by consolidation and ends
+                                with another price decrease which creates the supply zone. </li>
+                        </ul>
+                    </li>
+                    <li><strong>Reversal: Drop-Base-Rally</strong>
+                        <ul>
+                            <li>Forms a demand zone where market changes from down to up.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Reversal: Rally-Base-Drop</strong>
+                        <ul>
+                            <li>Forms a supply zone where market changes from up to down.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>When price returns to these zones, it usually moves in the same direction as the zone’s
+                            creation.</li>
+                        <li>The advantage of supply and demand trading is better understanding of market structure and
+                            dynamics.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="module3">
+                <h2>Module 3: The Law of Effort and Result (Wyckoff Theory)</h2>
+                <ul>
+                    <li>The effort made by aggressive and passive buyers and sellers will be reflected in the price
+                        movement of any market.</li>
+                    <li>Market is a battle between buyers and sellers, and the direction of the market is determined by
+                        the side with the greatest effort, represented by the volume.</li>
+                    <li>High volume indicates strong market participation, while low volume indicates weak
+                        participation.</li>
+                    <li>Volume is very important because it provides insight into market sentiment and future price
+                        movements. It’s easier to understand once you grasp supply and demand principles.</li>
+                    <li>This requires relating volume to price action.</li>
+                </ul>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>If there is tighter consolidation between support and resistance containing more than
+                            100–120 candle bars, and the candle closes above resistance with price buildup, chances are
+                            high that price will continue rising. <em>The longer it ranges, the harder it breaks.</em>
+                        </li>
+                        <li>For a valid shooting star candle, an uptrend must exist before the pattern appears.</li>
+                    </ul>
+                </div>
+                <h3>Momentum Candles</h3>
+                <ul>
+                    <li>Momentum candles are single candlesticks with a body more than twice the size of previous ones.
+                    </li>
+                    <li>These candles signal full bullish or bearish control and often lead to strong momentum
+                        continuation.</li>
+                </ul>
+
+                <img src="img/m_3_1.png" alt="The Law of Effort and Result (Wyckoff Theory)"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+            </section>
+
+
+            <section id="module4">
+                <h2>Module 4: Volume Spread Analysis (VSA)</h2>
+                <ul>
+                    <li>If you want to identify the signs of market manipulation and follow smart money footsteps, you
+                        need to learn VSA.</li>
+                    <li>Volume indicates how many buyers and sellers are supporting the move. Price movement is stronger
+                        when supported by high volume.</li>
+                    <li>VSA (Volume Spread Analysis) allows you to identify signs of manipulation and follow smart money
+                        footsteps.</li>
+                    <li>VSA can reveal when smart money is accumulating or distributing, testing supply or demand, or
+                        preparing to start/reverse a trend.</li>
+                    <li>VSA is based on the premise that volume is the fuel driving price movements.</li>
+                    <li>Volume is the amount of trading activity during a period, while Spread (Range) represents the
+                        difference between open and close prices of a candlestick.</li>
+                    <li>Analyzing the relationship between volume and spread reveals supply and demand dynamics in the
+                        market.</li>
+                    <li>When volume and spread are in harmony, buyers and sellers are balanced, and the market tends to
+                        continue in the current direction.</li>
+                    <li>When volume and spread are in disharmony, there’s an imbalance — the market may reverse or
+                        consolidate.</li>
+                    <li>When price and volume move together, it indicates strong continuation. For example, an uptrend
+                        with increasing volume signals strength.</li>
+                    <li>Divergence between price and volume suggests disagreement — the move may not be sustainable. For
+                        example, if volume decreases during an uptrend, continuation is unlikely.</li>
+                    <li>VSA is the second component of the Smart Money Trading Plan.</li>
+                </ul>
+            </section>
+
+            <section id="module5">
+                <h2>Module 5: The Law of Cause and Effect</h2>
+                <ul>
+                    <li>The differences between supply and demand are not random; they come after periods of
+                        preparation, as a result of specific events. For the market to develop an effect (trend), first
+                        there must be a cause (namely, accumulation/distribution).</li>
+                    <li>Every price move has a cause. Changes cannot happen out of nowhere; a cause must be established
+                        first.</li>
+                    <li>The cause develops during periods of sideways movement or when the market is ranging (look for
+                        small ranges or low volatility periods).</li>
+                    <li>The longer this process continues, the larger the expected resulting move.</li>
+                    <li>After a period of consolidation, there is an expansion or explosive move in price.</li>
+                </ul>
+
+                <img src="img/m_5_1.png" alt="The Law of Cause and Effect"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+            </section>
+
+            <section id="module6">
+                <h2>Module 6: The Composite Man AKA SMART MONEY</h2>
+                <ol>
+                    <li>Wyckoff created the idea of the composite man as an imaginary identity of the market.</li>
+                    <li>The single entity responsible for controlling the market.</li>
+                    <li>It always acts in his own best interest to ensure he can buy low and sell high.</li>
+                    <li>Think of the composite man as an evil entity, controlling markets by pushing bottoms.</li>
+                    <li>His single objective is to move the markets to your disadvantage, seeking to maximize his profit
+                        at <strong>"your"</strong> expense.</li>
+                    <li>Wyckoff Composite Man:</li>
+                    <ul>
+                        <li>He plans and executes his deceptions well in advance.</li>
+                        <li>He’s basically there to fool you into buying positions that he has already accumulated.</li>
+                        <li>He will tempt you to buy and sell at the worst possible time.</li>
+                    </ul>
+                </ol>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>Have you ever had the feeling that someone is watching your positions?</li>
+                        <li>That you enter the market, and immediately after, price goes against you?</li>
+                        <li>The market is quiet, with low activity, and as soon as you enter, the price starts jumping
+                            up and down?</li>
+                        <li>It’s like someone is driving prices, playing with your emotions.</li>
+                    </ul>
+                </div>
+                <ol start="7">
+                    <li>The Composite Man represents the biggest players (so-called smart money). It always acts in its
+                        interest to ensure that it can buy at a discount and sell at a premium.</li>
+                    <li>The Composite Man’s behavior is the opposite of retail traders, and in order to adapt to
+                        changing market conditions, we, retail traders, must learn from his behavior.</li>
+                    <li>If you don’t understand the game as he plays it, you’ll take the wrong side of the trade and
+                        you’ll sit in front of your screen, desperate as the market moves once again against your
+                        position.</li>
+                    <li>Your objective is to understand the game as he plays it, so you’ll stop taking the wrong side of
+                        the trade.</li>
+                    <li>In order to understand the behavior of the composite man, you first have to understand the
+                        concept of liquidity.</li>
+                </ol>
+
+                <img src="img/m_6_1.png" alt="The Composite Man"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                <img src="img/m_6_2.png" alt="The Composite Man"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                <img src="img/m_6_3.png" alt="The Composite Man"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+            </section>
+
+            <section id="module7">
+                <h2>Module 7: Liquidity Clear-Outs</h2>
+                <ul>
+                    <li><strong>Liquidity:</strong> Liquidity plays a crucial role in a market’s functionality. An ample
+                        participation from buyers and sellers is necessary for a market to be considered rich in
+                        liquidity. This is why market makers and smart money often engage in liquidity hunting or
+                        liquidity clear-outs, which involves extracting liquidity from the market by flushing out weak
+                        players.</li>
+
+                    <img src="img/m_7_1.png" alt="Liquidity Clear-Outs"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>The goal of this strategy is to take advantage of the liquidity that is provided by the
+                        stop-loss orders of other traders.</li>
+                    <li>Liquidity hunting works by identifying areas of high concentration of stop-loss orders in the
+                        market. These areas are usually near support and resistance levels, where many traders place
+                        their stops to protect their positions.</li>
+                    <li>Smart money, or the Composite Man, will then push the price towards these levels, triggering the
+                        stop-loss orders and creating a spike in volume and volatility. This spike can also cause other
+                        traders to panic and join the move, creating a double trap.</li>
+                    <li>Once the liquidity hunters have filled their orders at favorable prices, they will quickly
+                        reverse their positions and drive the price back to its original range.</li>
+                    <li>This can leave many traders with losses or missed opportunities, while the Composite Man profits
+                        from the price swing. This is one of the main strategies used by smart money to make money.</li>
+                    <li>Liquidity is the third component in the smart money trading plan.</li>
+                </ul>
+
+                <img src="img/m_7_2.png" alt="Liquidity Clear-Outs"
+                    style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+            </section>
+
+            <section id="module8">
+                <h2>Module 8: Think Like a Smart Money Trader</h2>
+                <ul>
+                    <li>If you are a retail trader who wants to succeed in the market, you need to learn how to think
+                        like a smart trader:</li>
+                    <ol>
+                        <li>Imagine you don’t have a 5000 dollars account, you have a 1 billion dollar account!</li>
+                        <li>You have the power to influence price movements and develop trends on the market.</li>
+                        <li>You have access to more information, more resources, and more capital than 99% of retail
+                            traders, and you need to use various tactics to deceive and manipulate other traders to your
+                            advantage.</li>
+                        <li>How would you do it?</li>
+                        <li>You wouldn’t trade like most retail traders. You’re in the business of making money, so you
+                            need many tactics to create false signals, traps, and illusions in the market.</li>
+                        <li>Smart money are not necessarily smarter than retail traders. They are simply more
+                            experienced, disciplined, and strategic.</li>
+                        <ul>
+                            <li>They have a clear understanding of how the market works, how other traders behave, and
+                                how they can exploit their emotions and biases.</li>
+                            <li>They do not trade based on predictions, opinions, or hopes. They trade based on
+                                probabilities, facts, and evidence.</li>
+                            <li>Smart money does not care about being right or wrong. They care about making money.</li>
+                        </ul>
+                    </ol>
+                    <li>They are flexible and adaptable to changing market conditions.</li>
+                    <li>They do not chase after trades or revenge trade. They wait patiently for high-probability
+                        opportunities and execute them with precision.</li>
+                    <li>Smart money does not follow the crowd. They lead the crowd.</li>
+                    <li>They do not rely on lagging indicators, news, or tips from others.</li>
+                    <li>They do not trade what they see or hear.</li>
+                    <li>They trade what they know and understand.</li>
+                    <li>They do not react to the market. They anticipate the market.</li>
+                </ul>
+            </section>
+
+            <section id="module9">
+                <h2>Module 9: Tactics Used by Smart Money to Trap You</h2>
+                <h3>A Game of Psychology and Deception</h3>
+                <ul>
+                    <li>Smart money know that most retail traders are driven by fear and greed, and they use these
+                        emotions against them.</li>
+                    <li>They use various tactics to create false signals, traps, and illusions in the market that lure
+                        retail traders into making bad trades or missing out on good ones.</li>
+                </ul>
+                <h4>Tactic No. 1 – Stop Hunting</h4>
+                <p>Smart money pushes the price to a level where they know many retail traders have placed their stop
+                    losses or take profits. This triggers a cascade of orders that either liquidates their positions or
+                    fills their orders at unfavorable prices. This allows smart money to either exit their positions
+                    with a profit or enter new positions at a better price.</p>
+                <h4>Tactic No. 2 – Fakeouts</h4>
+                <p>Smart money creates a false breakout of a support or resistance level that attracts many retail
+                    traders to enter in the direction of the breakout. However, after a few candles, the price reverses
+                    sharply in the opposite direction, trapping those traders in losing trades.</p>
+                <h4>Tactic No. 3 – Whipsaws</h4>
+                <p>Smart money creates a lot of volatility and noise in the market that confuses many retail traders.
+                    The price moves up and down rapidly without any clear direction or trend, causing many traders to
+                    exit their trades prematurely or switch sides frequently.</p>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <ul>
+                        <li>The reality is that many retail traders will use the same price levels to place their
+                            entries or stop losses. These are the perfect zones for smart money to trigger one of their
+                            traps!</li>
+                        <li><strong>Why is this difference between retail traders and smart money?</strong>
+                            <br>
+                            Because smart money doesn’t trade like retail traders who rely on technical analysis,
+                            indicators,
+                            or chart patterns. Institutional players cannot trade the same way because in low
+                            liquidity
+                            areas, their large orders would push price too far. Smart money uses high liquidity
+                            zones to
+                            place their large orders without excessively impacting the price.
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section id="module10-part1">
+                <h2>Module 10: Smart Money Traps - Fake Breakout at the High/Low of the Day</h2>
+                <ul>
+                    <li>If you are a day trader, you have probably experienced the frustration of being stopped out of a
+                        trade by a sudden spike in price at the high or low of the day - one of the most common ways
+                        that smart money manipulates the market to trap retail traders. These are the price movements
+                        that break a significant level of support or resistance, in this case the high or low of the
+                        day, but fail to sustain the momentum and quickly reverse back into the previous range.</li>
+                    <img src="img/m_10a_1.png" alt="Fake Breakout at the High/Low of the Day"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <img src="img/m_10a_2.png" alt="Fake Breakout at the High/Low of the Day"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ul>
+                <p>Smart money uses these fake breakouts for two main reasons:</p>
+
+                <ul>
+                    <img src="img/m_10a_3.png" alt="Fake Breakout at the High/Low of the Day"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>Smart money may push the price above the high of the day to trigger stop losses and buy orders
+                        from retail traders, trapping those who are following the breakout. This creates a surge in
+                        demand that drives the price higher.</li>
+                    <img src="img/m_10a_4.png" alt="Fake Breakout at the High/Low of the Day"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>But you can identify this by analyzing the volume and looking for common price action patterns.
+                        Fake breakouts often form specific price action patterns that signal a reversal or continuation
+                        of the trend. For example:</li>
+                </ul>
+                <ol>
+                    <li>Double top at the high of the day, after a fake breakout</li>
+                    <li>Double bottom at the low of the day, after a fake breakout</li>
+                    <li>Look for reversal candlestick patterns that indicate bullish or bearish sentiment in the market.
+                        For example – pin bars or candles with large wicks are a clear sign of rejection after a failed
+                        breakout.</li>
+                </ol>
+            </section>
+
+            <section id="module10-part2">
+                <h2>Module 10: Smart Money Traps - Asian Session Trap</h2>
+                <ul>
+                    <li>The Asian trading session is one of the main zones targeted by the smart money – characterized
+                        by low volatility and tight trading ranges.</li>
+                    <li>The Tokyo range trap is a common phenomenon, especially in Forex, Crypto, and Indices markets.
+                        It occurs during the Asian session, typically characterized by low volatility and tight ranges.
+                    </li>
+                    <li>The Tokyo range trap refers to situations where smart money uses the session range to trap
+                        retail traders into false breakouts and reversals, then exploits their positions during the more
+                        volatile and liquid London and New York sessions.</li>
+                    <li>One common tactic is creating a false breakout of the Tokyo range – the high and low of the
+                        price action during the Tokyo session.</li>
+                    <li>Price moves beyond the range, then quickly reverses back inside, creating a false signal for
+                        retail traders who enter or exit based on the breakout, only to find himself
+                        trapped in losing positions when the price moves against him. </li>
+                    <li>Another tactic is the false reversal of the Tokyo range, the opposite of a false breakout.</li>
+                </ul>
+                <h3>How to Avoid the Tokyo Range Trap</h3>
+                <ol>
+                    <li>Use volume to measure the strength of the breakout.</li>
+                    <li>High volume outside the Tokyo range indicates strong market participation and conviction behind
+                        a price
+                        movement. </li>
+                    <li>Low volume outside the Tokyo range shows weak participation and low conviction behind a price
+                        movement.</li>
+                    <li>A high-volume breakout or reversal is more likely to be genuine than a low-volume one.</li>
+                    <li>Study past examples of how the Tokyo range trap has affected market trends.</li>
+                    <li><strong>Analyze past Tokyo sessions to find patterns:</strong> In this example, traders who have
+                        taken short
+                        positions at the top of the Asian range had their stop losses hunted, outside of the range. Each
+                        time, the
+                        market reversed aggressively in the opposite direction. The upward movement outside of the range
+                        also
+                        seduced traders to take long positions, hoping for breakout trade and that’s the second batch of
+                        traders,
+                        who were trapped i.e., long breakout traders were also trapped!</li>
+                    <img src="img/m_10b_1.png" alt="Asian Session Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ol>
+            </section>
+
+            <section id="module10-part3">
+                <h2>Module 10: Smart Money Traps – Wedges/Triangles Trap</h2>
+                <ul>
+                    <li>Wedges & Triangles are two of the most common chart patterns that traders use to identify
+                        potential reversals or continuations in the market. But be careful, not all wedges and triangles
+                        are genuine!</li>
+                    <li>Sometimes, they are deliberately created by smart money to trap retail traders.</li>
+                    <li>Wedges and Triangles are usually formed by two converging trend lines that connect the highs and
+                        lows of price action. They indicate a period of consolidation, where the market is indecisive
+                        and the trading range narrows.</li>
+                    <li><strong>Point to be noted:</strong> Smart money knows that many traders rely on wedges and
+                        triangles to make trading decisions. They can use these patterns to create false signals and
+                        lure unsuspecting traders into traps.</li>
+                    <li>You’ll often see that price breaks out of a wedge or a triangle in one direction but then
+                        quickly reverses and moves in the opposite direction – this creates confusion and panic among
+                        traders who followed the initial breakout signal and entered positions in that direction.</li>
+                    <li>The idea is to trap traders on the wrong side of the market. For example, this will result in a
+                        sharp decline in price and a minor reversal of the uptrend.</li>
+
+                    <img src="img/m_10c_1.png" alt="Wedges/Triangles Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <img src="img/m_10c_2.png" alt="Wedges/Triangles Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>Smart money can create a symmetrical triangle or wedge pattern in a sideways market and induce
+                        stop runs on both sides of the triangle. This causes traders who entered positions based on
+                        either side of the breakout to exit their trades at a loss.</li>
+                    <li>Smart money will take advantage of this liquidity and enter positions in their desired
+                        direction.</li>
+                    <img src="img/m_10c_3.png" alt="Wedges/Triangles Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>The reality is that it’s very hard to know for sure whether a wedge or a triangle pattern is
+                        genuine or fake.</li>
+                    <li>In such cases, there is no way of predicting which direction the price will ultimately break
+                        out. Avoid trading during this type of consolidation.</li>
+                    <img src="img/m_10c_4.png" alt="Wedges/Triangles Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ul>
+                <div class="note">
+                    <strong>Note:</strong>
+                    <p>If you want to be active in the market, volume is the only indicator that will help you
+                        anticipate future direction.</p>
+                    <p><strong>Monitor the Volume:</strong> Generally, volume should decrease as a wedge or a triangle
+                        forms, indicating that traders are waiting for a breakout signal.</p>
+                </div>
+            </section>
+
+            <section id="module10-part4">
+                <h2>Module 10: Smart Money Traps – Market Open Manipulation</h2>
+                <ul>
+                    <li>Market open manipulation is another trap which refers to the deliberate actions of smart money
+                        to create false impressions of supply and demand in the market.</li>
+                    <li>These actions are designed to influence price movements and the psychology of retail traders,
+                        who often trade based on technical analysis, indicators, or news. It’s the reality that every
+                        trader has to face and deal with.</li>
+                    <li>The market open manipulation happens for two main reasons: smart money wants to take profit from
+                        their existing positions or to accumulate or distribute more positions at favorable prices.</li>
+                    <li>For example: this will trigger stop-loss orders and panic selling from retail traders.</li>
+
+                    <img src="img/m_10d_1.png" alt="Market Open Manipulation"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ul>
+                <p><strong>There are many types of market manipulation that smart money can use to trick retail traders.
+                        By now,
+                        you already know them:</strong></p>
+                <ul>
+                    <li><strong>Fake Breakouts:</strong> Smart money pushes the price above or below a significant
+                        support or resistance level, only to reverse it shortly after. This creates a false signal that
+                        the market is trending in one direction when in fact it’s going in the opposite direction.</li>
+                    <li><strong>Stop-Loss Hunting:</strong> Smart money targets the areas where retail traders place
+                        their stop-loss orders, such as below support levels or above resistance levels.</li>
+                    <li><strong>False Signals:</strong> Smart money uses indicators, news events, or other factors to
+                        generate misleading signals that contradict the actual market direction. For example, smart
+                        money may release positive news about a stock before the market opens, causing retail traders to
+                        buy into the hype. Or they deliberately move the price above a common moving average, enticing
+                        moving average traders to enter. Once the market opens, smart money sells their positions at
+                        high prices and then drives the price down.</li>
+
+                    <img src="img/m_10d_2.png" alt="Market Open Manipulation"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ul>
+                <ul>
+                    <li>Market open manipulation can reduce liquidity in the market by creating artificial supply and
+                        demand imbalances. This can make it harder for retail traders to enter or exit their positions
+                        at favorable prices.</li>
+                    <li>For beginner traders, it’s very hard to make money in these conditions. The market open trap can
+                        distort the true direction and strength of market trends, confusing retail traders who rely on
+                        trend-following strategies or indicators.</li>
+                </ul>
+            </section>
+
+            <section id="module10-part5">
+                <h2>Module 10: Smart Money Traps – Accumulation / Distribution Trap</h2>
+                <ul>
+                    <li>Trading is a game of psychology and strategy, where smart money traders try to outsmart and
+                        outplay retail traders who often lack the knowledge, experience, and discipline to succeed in
+                        the market.</li>
+                    <li>One of the ways that smart money gains an edge over retail traders is by using accumulation and
+                        distribution strategies to manipulate and trap them.</li>
+
+                    <img src="img/m_10e_1.png" alt="Accumulation / Distribution Trap"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <li>The goal of these strategies is to create false signals and expectations in the market that lure
+                        retail traders into buying or selling at the wrong time.</li>
+                </ul>
+                <h3>During Accumulation:</h3>
+                <ol>
+                    <li>Smart money traders may create a downtrend or a consolidation pattern, making it appear that the
+                        market is weak or bearish. This may induce retail traders to sell their positions or short the
+                        market, expecting further price declines.</li>
+                    <li>Smart money will suddenly reverse the trend and push the price up, triggering stop losses of
+                        retail traders with short positions. This creates a bullish breakout that attracts more buyers
+                        into the market, allowing smart money traders to distribute their positions at high prices.</li>
+                </ol>
+                <h3>During Distribution:</h3>
+                <ol>
+                    <li>Smart money may create an uptrend or a consolidation pattern, making it appear that the market
+                        is strong and bullish. This may induce retail traders to go long, expecting further price
+                        increases.</li>
+                    <li>Once smart money has distributed enough positions at high prices, they may suddenly reverse the
+                        trend and push the price down, triggering stop losses of retail traders who went long. This
+                        creates a bearish breakdown that attracts more sellers into the market, allowing smart money
+                        traders to accumulate more positions at low prices.</li>
+                </ol>
+                <ul>
+                    <li>Smart money traders often use volume to confirm or conceal their accumulation and distribution
+                        strategies.</li>
+                    <li>During the accumulation phase, smart money traders may use low volume to hide their buying
+                        activity and create a false sense of weakness in the market.</li>
+                    <li>However, if you analyze price action during this phase, you’ll see higher lows at the bottom of
+                        the accumulation, which is a bullish signal.</li>
+                    <li>Smart money traders will use support and resistance to test and break the confidence and
+                        conviction of retail traders by creating false breakouts that trap them on the wrong side of the
+                        market.</li>
+                    <li>During the accumulation phase, known as “The Spring,” smart money traders will usually use the
+                        support level to create false breakdowns that make retail traders think the price will fall
+                        further below support.</li>
+                </ul>
+            </section>
+
+            <section id="module11">
+                <h2>Module 11: How to Align with Smart Money</h2>
+                <ul>
+                    <li>Trading will always be a game between the smart money against the dumb money.</li>
+                    <li>Retail traders might see some patterns as continuation ones, but the smart money are seeing them
+                        as reversal patterns!</li>
+                    <li>You’ve seen the different traps used by big players. In order to align yourself with their true
+                        intentions, always remember that smart money is always searching for pockets of liquidity in
+                        order to fill their desired positions in the market!</li>
+                    <li>They are always looking to shake out weak hands, particularly around support and resistance
+                        levels that are being widely watched.</li>
+                    <li><strong>Your New Trading Plan:</strong> Reconsider how you trade and start building a strategy
+                        that allows you to join the smart money after a liquidity clear-out or after an obvious market
+                        trap.</li>
+                    <li>Big players need lots of liquidity in order to fill their massive orders.</li>
+                    <li><strong>How do they get this liquidity?</strong> By creating well-known retail chart patterns
+                        and traps in order
+                        to involve retail traders into the market.</li>
+                    <img src="img/m_11_1.png" alt="How to Align with Smart Money"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    <img src="img/m_11_2.png" alt="How to Align with Smart Money"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+                    <li>For retail traders like you and me, the aim should be to spot potential liquidity zones and join
+                        the game of the
+                        market makers, avoiding being a liquidity target.</li>
+                    <li>The simplest structure to pay attention to are zones with equal highs or lows. Always assume
+                        smart money will want to trap traders around these areas!</li>
+                    <li>A liquidity clear-out should always present itself with a rapid, strong reversal move after a
+                        critical area is taken out – a rapid rotation of price back into the previous trading range.
+                    </li>
+                    <img src="img/m_11_3.png" alt="How to Align with Smart Money"
+                        style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                </ul>
+            </section>
+
+            <section>
+                <h2 id="module12-part1">Module 12: Six Trading Strategies</h2>
+                <h3>Strategy No. 1: Demand Zone Entry After Liquidity Clear-Out</h3>
+                <div class="steps">
+
+                    <ol>
+                        <li>Identify a liquidity run that breaks below a previous swing low or support level where many
+                            retail traders have placed their stop-loss orders.</li>
+                        <li>Identify a potential demand zone that was previously formed near the liquidity run.</li>
+                        <li>Wait for price to retest the demand zone and confirm its validity by finding signs of
+                            rejection or bounce (wicks, VSA confirmation).</li>
+                        <li>Enter a long position at or near the demand zone with a stop-loss below the zone or below
+                            the liquidity run.</li>
+                        <li>Exit the position at or near a previous swing high or at the next important supply area, or
+                            where smart money may initiate another liquidity run.</li>
+                        <img src="img/m_12_1.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                        <img src="img/m_12_2.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    </ol>
+                </div>
+
+                <h3 id="module12-part2">Strategy No. 2: Supply Zone Entry After Liquidity Clear-Out</h3>
+                <div class="steps">
+                    <ol>
+                        <li>Identify a liquidity run that breaks above a previous swing high or resistance level where
+                            many retail traders have placed their stop-loss orders.</li>
+                        <li>Identify a potential supply zone that was previously formed near the liquidity run.</li>
+                        <li>Wait for price to retest the supply zone and confirm its validity by finding signs of
+                            rejection or bounce (wicks, VSA confirmation).</li>
+                        <li>Enter a short position at or near the supply zone with a stop-loss above the zone or above
+                            the liquidity run.</li>
+                        <li>Exit the position at or near a previous swing low or at the next important demand area, or
+                            where smart money may initiate another liquidity run.</li>
+                        <img src="img/m_12_3.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+                    </ol>
+                </div>
+
+                <h3 id="module12-part3">Strategy No. 3: Demand Zone Entry After Down Thrust VSA Pattern</h3>
+                <div class="steps">
+                    <ol>
+                        <li>Find a down thrust formation, which appears as a bullish pin bar or a Doji bar having an
+                            ultra-high or above-average volume. The spread of the bar is low while the volume is
+                            relatively high – more demand than supply, potentially causing price to rise in the near
+                            future.</li>
+                        <li>Identify the potential demand zone around the same area.</li>
+                        <li>If you find a liquidity clear-out that's even better.</li>
+                        <li>Enter a long position at or near the demand zone with a stop-loss below the zone.</li>
+                        <li>Take profit at previous swing high or at the next important supply area or where smart money
+                            may initiate another liquidity run.</li>
+                        <img src="img/m_12_4.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+
+                    </ol>
+                </div>
+
+                <h3 id="module12-part4">Strategy No. 4: Supply Zone Entry After Up Thrust VSA Pattern</h3>
+                <div class="steps">
+                    <ol>
+                        <li>Find an up thrust formation, which appears as a bearish pin bar or a Doji bar having an
+                            ultra-high or above-average volume. The spread of the bar is low while the volume is
+                            relatively high – more supply than demand, potentially causing price to fall in the near
+                            future.</li>
+                        <li>Identify the potential supply zone around the same area.</li>
+                        <li>If you find a liquidity clear-out that's even better.</li>
+                        <li>Enter a short position at or near the demand zone with a stop-loss above the zone.</li>
+                        <li>Take profit near a previous swing low or at the next important demand area or where smart
+                            money may initiate another liquidity run.</li>
+                        <img src="img/m_12_5.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    </ol>
+                </div>
+
+                <h3 id="module12-part5">Strategy No. 5: Over and Under Break of Structure</h3>
+                <p>Break of structure is the first sign that smart money have initiated a price shift.</p>
+                <div class="steps">
+                    <h4>Bearish Over and Under:</h4>
+                    <ol>
+                        <li>Price creates a higher high.</li>
+                        <li>Price creates a lower high.</li>
+                        <li>Price breaks the previous high and creates a new higher high.</li>
+                        <li>Price breaks the previous low as well and forms a lower low.</li>
+                        <img src="img/m_12_6.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                        <img src="img/m_12_7.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    </ol>
+                    <h4>Bullish Over and Under:</h4>
+                    <ol>
+                        <li>Price creates a lower low.</li>
+                        <li>Price creates a lower high.</li>
+                        <li>Price breaks the previous low and creates a new lower low.</li>
+                        <li>Price breaks the previous high as well and forms a higher high.</li>
+                        <img src="img/m_12_8.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                        <img src="img/m_12_9.png" alt="Six Trading Strategies"
+                            style="max-width:90%; border:2px solid #ccc; border-radius:10px;">
+                    </ol>
+                </div>
+
+                <div class="note">
+                    <p>A break of structure doesn't always result in reversal! Align your positions with smart money
+                        using S/D Zones.</p>
+                    <p><strong>Trading Plan:</strong> Find a break of structure pattern, wait for a retracement, and
+                        find a supply and demand zone for an entry to execute the trade with higher accuracy.</p>
+                    <ul>
+                        <li>Break of structure: Lower Low - Lower High - Lower Low - Higher High</li>
+                        <li>Find the fresh demand zone (rally base rally) - look for the last bearish candle before the
+                            increase.</li>
+                    </ul>
+                </div>
+
+                <h3 id="module12-part6">Strategy No. 6: Psychological Numbers and VSA Clear-Out</h3>
+                <div class="steps">
+                    <ol>
+                        <li>Keep an eye on psychological numbers, i.e., price levels that have a significant impact on
+                            market sentiment and behavior – round numbers or multiples like 50, 100, etc.</li>
+                        <li>These numbers tend to act as support and resistance levels, as well as trigger points for
+                            stop-losses and take-profits, reflecting the collective psychology of market participants.
+                        </li>
+                        <li>You will often see increased volatility, increased volume, and many liquidity clear-outs
+                            around these levels.</li>
+                        <li><strong>Sell Zone:</strong> Supply Zone + Psychological Level</li>
+                        <li><strong>Buy Zone:</strong> Demand Zone + Psychological Level</li>
+                    </ol>
+                </div>
+                <div class="note">
+                    <strong>Best Setup</strong>
+                    <ol>
+
+                        <ul>1. Supply or Demand Zone</ul>
+                        <ul>2. Liquidity Run</ul>
+                        <ul>3. VSA Pattern</ul>
+                        <ul>4. Psychological Number</ul>
+                    </ol>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 Cryptotion's Smart Money Concept</p>
+    </footer>
+</body>
+
+</html>
