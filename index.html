@@ -134,6 +134,136 @@
         .dropbtn:after {
             float: right;
         }
+
+
+        /* CSS - add to your stylesheet (overrides your existing nav rules) */
+
+        /* --- hamburger (visible on small screens) --- */
+        .hamburger {
+            display: none;
+            /* shown via media query */
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1200;
+            background: transparent;
+            border: none;
+            padding: 0.25rem;
+            cursor: pointer;
+        }
+
+        /* basic hamburger SVG styling */
+        .hamburger svg rect {
+            fill: #333;
+            rx: 1;
+        }
+
+        /* --- sidebar --- */
+        .sidebar {
+            width: 20%;
+            min-width: 220px;
+            /* ensure readable on narrow desktop */
+            background: #fff;
+            border-right: 1px solid #ddd;
+            padding: 1rem;
+            height: 100vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+            transition: transform 0.22s ease, box-shadow 0.22s ease;
+        }
+
+        /* keep existing styles (adjusted) */
+        .sidebar h2 {
+            font-size: 1.2rem;
+            color: #1a73e8;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin: 0.5rem 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sidebar ul li a:hover {
+            color: #1a73e8;
+        }
+
+        /* --- dropdowns --- */
+        .dropdown .dropbtn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .dropdown .dropbtn[aria-expanded="true"] {
+            color: #1a73e8;
+        }
+
+        .dropdown .dropdown-content {
+            display: none;
+            margin-left: 0.5rem;
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+
+        .dropdown.open .dropdown-content {
+            display: block;
+        }
+
+        /* --- mobile behaviour --- */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            /* hide sidebar by default on small screens */
+            .sidebar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                width: 280px;
+                /* fixed width for mobile drawer */
+                transform: translateX(-110%);
+                /* hidden */
+                box-shadow: none;
+                z-index: 1100;
+                background: #fff;
+            }
+
+            /* visible when open */
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            }
+
+            /* optionally, dim page when open (requires adding a backdrop element if you want) */
+        }
+
+        /* --- keep sidebar visible and not full-height on very large screens if you want --- */
+        @media (min-width: 1200px) {
+            .sidebar {
+                width: 18%;
+                min-width: 260px;
+            }
+        }
     </style>
 </head>
 
@@ -143,7 +273,18 @@
         <p>Comprehensive Guide based on Wyckoff Theory, Supply & Demand, and Institutional Trading</p>
     </header>
     <main>
-        <nav>
+
+        <!-- HTML -->
+        <button id="hamburger" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+            <!-- simple hamburger icon (SVG) -->
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect y="5" width="24" height="2"></rect>
+                <rect y="11" width="24" height="2"></rect>
+                <rect y="17" width="24" height="2"></rect>
+            </svg>
+        </button>
+
+        <nav id="sidebar" class="sidebar" aria-label="Course modules">
             <h2>Modules</h2>
             <ul>
                 <li><a href="#module1">1. Law of Supply and Demand</a></li>
@@ -179,10 +320,11 @@
                         <li><a href="#module12-part5">Over and Under Break of Structure</a></li>
                         <li><a href="#module12-part6">Psychological Numbers and VSA Clear-Out</a></li>
                     </ul>
-
-                <li>
+                </li>
             </ul>
         </nav>
+
+
 
         <article>
             <section id="module1">
@@ -974,6 +1116,58 @@
     <footer>
         <p>© 2025 Cryptotion's Smart Money Concept</p>
     </footer>
+
+    <script>
+        (function () {
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+            const dropBtns = sidebar.querySelectorAll('.dropbtn');
+            const navLinks = sidebar.querySelectorAll('a');
+
+            // Toggle sidebar (for mobile)
+            function toggleSidebar() {
+                const isOpen = sidebar.classList.toggle('open');
+                hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                hamburger.classList.toggle('is-open', isOpen);
+            }
+            hamburger.addEventListener('click', toggleSidebar);
+
+            // Toggle each dropdown
+            dropBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const expanded = btn.getAttribute('aria-expanded') === 'true';
+                    btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+                    btn.parentElement.classList.toggle('open', !expanded);
+                });
+            });
+
+            // Close mobile menu when a link is clicked (nice for one-page docs)
+            navLinks.forEach(a => {
+                a.addEventListener('click', () => {
+                    if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+                        toggleSidebar();
+                    }
+                });
+            });
+
+            // Optional: close sidebar if click outside (mobile)
+            document.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+                    if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+                        toggleSidebar();
+                    }
+                }
+            });
+
+            // Accessibility: close sidebar on escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && sidebar.classList.contains('open')) {
+                    toggleSidebar();
+                }
+            });
+        })();
+    </script>
+
 </body>
 
 </html>
